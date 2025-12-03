@@ -1,0 +1,15 @@
+/**
+ * The ClassRoom entity.
+ * @author A true hipster
+ */
+entity ClassRoom {
+    /** fieldName */
+    className String,
+    department String,
+    year Integer,
+    teacherId Long
+}
+
+dto all with mapstruct
+service all with serviceImpl
+paginate * with pagination

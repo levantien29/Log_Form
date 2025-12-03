@@ -1,0 +1,39 @@
+{
+  "annotations": {
+    "changelogDate": "20251120143849"
+  },
+  "applications": "*",
+  "clientRootFolder": "studentService",
+  "databaseType": "sql",
+  "documentation": "The Student entity.\\n@author A true hipster",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "documentation": "fieldName",
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "birthDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "classroomId",
+      "fieldType": "Long"
+    }
+  ],
+  "microserviceName": "studentService",
+  "name": "Student",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

@@ -1,0 +1,35 @@
+{
+  "annotations": {
+    "changelogDate": "20251120095028"
+  },
+  "applications": "*",
+  "clientRootFolder": "classRoomService",
+  "databaseType": "sql",
+  "documentation": "The ClassRoom entity.\\n@author A true hipster",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "documentation": "fieldName",
+      "fieldName": "className",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "department",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "year",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "teacherId",
+      "fieldType": "Long"
+    }
+  ],
+  "microserviceName": "classRoomService",
+  "name": "ClassRoom",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

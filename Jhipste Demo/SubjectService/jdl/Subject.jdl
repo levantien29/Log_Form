@@ -1,0 +1,14 @@
+/**
+ * The Subject entity.
+ * @author A true hipster
+ */
+entity Subject {
+    /** fieldName */
+    subjectName String,
+    credit Integer,
+    teacherId Long
+}
+
+dto all with mapstruct
+service all with serviceImpl
+paginate * with pagination

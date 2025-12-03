@@ -1,0 +1,35 @@
+{
+  "annotations": {
+    "changelogDate": "20251120094351"
+  },
+  "applications": "*",
+  "clientRootFolder": "teacherService",
+  "databaseType": "sql",
+  "documentation": "The Teacher entity.\\n@author A true hipster",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "documentation": "fieldName",
+      "fieldName": "teacherName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "department",
+      "fieldType": "String"
+    }
+  ],
+  "microserviceName": "teacherService",
+  "name": "Teacher",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

@@ -1,0 +1,15 @@
+/**
+ * The Teacher entity.
+ * @author A true hipster
+ */
+entity Teacher {
+    /** fieldName */
+  teacherName String,
+  email String,
+  phone String,
+  department String
+}
+
+dto all with mapstruct
+service all with serviceImpl
+paginate * with pagination

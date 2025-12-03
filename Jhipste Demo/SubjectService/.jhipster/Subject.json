@@ -1,0 +1,31 @@
+{
+  "annotations": {
+    "changelogDate": "20251120143925"
+  },
+  "applications": "*",
+  "clientRootFolder": "subjectService",
+  "databaseType": "sql",
+  "documentation": "The Subject entity.\\n@author A true hipster",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "documentation": "fieldName",
+      "fieldName": "subjectName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "credit",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "teacherId",
+      "fieldType": "Long"
+    }
+  ],
+  "microserviceName": "subjectService",
+  "name": "Subject",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

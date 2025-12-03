@@ -1,0 +1,107 @@
+# # Keycloak + MySQL (persistent)
+# name: classroomservice
+# services:
+#   keycloak:
+#     image: quay.io/keycloak/keycloak:26.2.3
+#     command: >
+#       start-dev
+#       --import-realm
+#       --db=mysql
+#       --db-url-host=mysql
+#       --db-url-port=3306
+#       --db-url-database=keycloak
+#       --db-username=root
+#       --db-password=123456
+#     environment:
+#       - KEYCLOAK_ADMIN=admin
+#       - KEYCLOAK_ADMIN_PASSWORD=admin
+#       - KC_FEATURES=scripts
+#       - KC_HTTP_PORT=9080
+#       - KC_HTTPS_PORT=9443
+#       - KC_HEALTH_ENABLED=true
+#       - KC_HTTP_MANAGEMENT_PORT=9990
+#     volumes:
+#       - ./realm-config:/opt/keycloak/data/import
+#       - ./realm-config/keycloak-health-check.sh:/opt/keycloak/health-check.sh
+#     ports:
+#       - "9080:9080"
+#       - "9443:9443"
+#     depends_on:
+#       mysql:
+#         condition: service_healthy
+#     healthcheck:
+#       test: ["CMD-SHELL", "bash /opt/keycloak/health-check.sh"]
+#       interval: 5s
+#       timeout: 5s
+#       retries: 50
+#       start_period: 10s
+#     labels:
+#       org.springframework.boot.ignore: true
+
+#   mysql:
+#     image: mysql:8.0
+#     restart: always
+#     environment:
+#       MYSQL_ROOT_PASSWORD: 123456
+#       MYSQL_DATABASE: keycloak
+#     ports:
+#       - "3307:3306"
+#     volumes:
+#       - mysql_data:/var/lib/mysql
+#     healthcheck:
+#       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+#       interval: 5s
+#       timeout: 5s
+#       retries: 30
+
+# volumes:
+#   mysql_data:
+
+name: classroomservice
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: keycloak-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: keycloak
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.2.3
+    container_name: keycloak
+    command: >
+      start
+      --import-realm
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+
+      KC_DB: mysql
+      KC_DB_URL: jdbc:mysql://mysql:3306/keycloak
+      KC_DB_USERNAME: root
+      KC_DB_PASSWORD: 123456
+
+      KC_HTTP_PORT: 9080
+      KC_HEALTH_ENABLED: true
+
+    volumes:
+      - ./realm-config:/opt/keycloak/data/import
+    ports:
+      - "9080:9080"
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+volumes:
+  mysql_data:
