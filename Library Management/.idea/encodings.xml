@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/AuthorService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/BookService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/BorrowService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CategoryService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GatewayService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MemberService/src/main/java" charset="UTF-8" />
+  </component>
+</project>

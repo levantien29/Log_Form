@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/Demo_DTO/pom.xml" />
+        <option value="$PROJECT_DIR$/User_Dto/pom.xml" />
+        <option value="$PROJECT_DIR$/Book_Rest/pom.xml" />
+        <option value="$PROJECT_DIR$/Java_User/pom.xml" />
+        <option value="$PROJECT_DIR$/QL_PerSon/pom.xml" />
+        <option value="$PROJECT_DIR$/User_Rest/pom.xml" />
+        <option value="$PROJECT_DIR$/Animal_Rest/pom.xml" />
+        <option value="$PROJECT_DIR$/Rest_PerSon/pom.xml" />
+        <option value="$PROJECT_DIR$/hello_spring/pom.xml" />
+        <option value="$PROJECT_DIR$/Product_Rest/pom.xml" />
+        <option value="$PROJECT_DIR$/User_MapStruct/pom.xml" />
+        <option value="$PROJECT_DIR$/Phone_MapStruct/pom.xml" />
+        <option value="$PROJECT_DIR$/Quan_Li_Nhan_Su/pom.xml" />
+        <option value="$PROJECT_DIR$/Animal_Mapstruct/pom.xml" />
+        <option value="$PROJECT_DIR$/Order_Management/pom.xml" />
+        <option value="$PROJECT_DIR$/Product_Mapstruct/pom.xml" />
+        <option value="$PROJECT_DIR$/quan_li_nhan_vien/pom.xml" />
+        <option value="$PROJECT_DIR$/quan_li_sinh_vien/pom.xml" />
+        <option value="$PROJECT_DIR$/quan_li_thong_tin/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="openjdk-23" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

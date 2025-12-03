@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Annotation profile for Phone_MapStruct" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar" />
+        </processorPath>
+        <module name="Phone_MapStruct" />
+      </profile>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="quan_li_sinh_vien" />
+      </profile>
+      <profile name="Annotation profile for User_MapStruct" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="Product_Mapstruct" />
+        <module name="User_MapStruct" />
+        <module name="Animal_Mapstruct" />
+      </profile>
+      <profile name="Annotation profile for quan_li_thong_tin" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="QL_PerSon" />
+        <module name="quan_li_thong_tin" />
+        <module name="Java_User" />
+        <module name="Animal_Rest" />
+        <module name="demo" />
+        <module name="Demo_DTO" />
+        <module name="Product_Rest" />
+        <module name="hello_spring" />
+        <module name="User_Rest" />
+        <module name="User_Dto" />
+        <module name="Book_Rest" />
+        <module name="Rest_PerSon" />
+        <module name="quan_li_nhan_vien" />
+        <module name="Order_Management" />
+        <module name="Quan_Li_Nhan_Su" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Animal_Mapstruct" options="-parameters" />
+      <module name="Animal_Rest" options="-parameters" />
+      <module name="Book_Rest" options="-parameters" />
+      <module name="Demo_DTO" options="-parameters" />
+      <module name="Java_User" options="-parameters" />
+      <module name="Order_Management" options="-parameters" />
+      <module name="Phone_MapStruct" options="-parameters" />
+      <module name="Product_Mapstruct" options="-parameters" />
+      <module name="Product_Rest" options="-parameters" />
+      <module name="QL_PerSon" options="-parameters" />
+      <module name="Quan_Li_Nhan_Su" options="-parameters" />
+      <module name="Rest_PerSon" options="-parameters" />
+      <module name="User_Dto" options="-parameters" />
+      <module name="User_MapStruct" options="-parameters" />
+      <module name="User_Rest" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="hello_spring" options="-parameters" />
+      <module name="quan_li_nhan_vien" options="-parameters" />
+      <module name="quan_li_sinh_vien" options="-parameters" />
+      <module name="quan_li_thong_tin" options="-parameters" />
+    </option>
+  </component>
+</project>
